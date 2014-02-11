@@ -265,7 +265,7 @@ html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 body {
-  font-family: "Oxygen", Helvetica, Arial, sans-serif;
+  font-family: 'oxygenregular', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.428571429;
   color: #333;
@@ -400,7 +400,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Oxygen", Helvetica, Arial, sans-serif;
+  font-family: 'oxygenregular', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -4674,7 +4674,7 @@ body.modal-open,
   -webkit-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
-.modal.in .modal-dialog {
+.modal.in.modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0);
@@ -5857,4 +5857,12 @@ li {
     width: 30%;
     margin-right: 40px;
   }
+}
+strong {
+  font-family: 'oxygenbold';
+  font-weight: 400;
+}
+em {
+  font-family: 'oxygenitalic';
+  font-style: normal;
 }
