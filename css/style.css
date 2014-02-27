@@ -5797,18 +5797,42 @@ li {
   margin-bottom: 12px;
 }
 .footer {
-  height: 100%;
+  min-height: 100%;
   padding-top: 0;
   color: #fff;
   background: #555;
   text-align: center;
+}
+.footer form {
+  background: rgba(0,0,0,0.2);
+  text-align: left;
+  padding: 40px;
+}
+.footer form em {
+  color: #bbb;
+}
+.footer form .failed-message,
+.footer form .success-message,
+.footer form.submit-success button {
+  display: none;
+}
+.footer form.submit-failed .failed-message,
+.footer form.submit-success .success-message {
+  display: block;
+  margin-bottom: 10px;
+}
+.footer form.submit-success .success-message {
+  color: #5cb85c;
+}
+.footer form.submit-failed .failed-message {
+  color: #d9534f;
 }
 .biz-card {
   color: #333;
   text-align: left;
   background: #fff;
   padding: 40px 40px;
-  display: inline-block;
+  display: block;
 }
 .biz-card:before,
 .biz-card:after {

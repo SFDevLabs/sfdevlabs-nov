@@ -109,13 +109,47 @@ block content
       path.one(d='M0 0 L100 100 L100 0 Z')
       path.two(d='M0 100 L100 0 L0 0 Z')
     h1.sectitle Contact Us:
-    .biz-card
-      img.img-responsive.card-logo(src="./images/large_logo.png")
-      address
-        strong SF Dev Labs
-        br
-        | 835a Divisidero St.
-        br
-        | San Francisco, CA 94107
-        br
-        | <a href="mailto:team@sfdevlabs.com">team@sfdevlabs.com</a>
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          form#contact-form
+            div(class="success-message") Thank you for contacting us! We'll be in touch.
+            div(class="failed-message") Submission failed, please review and try again.
+            div(class="form-group")
+              label(for="name") Name
+              <input class="form-control" type="text" id="name" name="name" required />
+            div(class="form-group")
+              label(for="email") Email Address
+              <input class="form-control" type="email" id="email" name="email" placeholder="you@email.com" required />
+            div(class="form-group")
+              label(for="organization") Organization <em>(optional)</em>
+              <input class="form-control" type="text" id="organization" name="organization" />
+            div(class="form-group")
+              label(for="message") Message
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-default">Submit</button>
+          .biz-card
+            img.img-responsive.card-logo(src="./images/large_logo.png")
+            address
+              strong SF Dev Labs
+              br
+              | 835a Divisidero St.
+              br
+              | San Francisco, CA 94107
+              br
+              | <a href="mailto:team@sfdevlabs.com">team@sfdevlabs.com</a>
+  script(src="http://src.fireform.org/fireform.min.js")
+  script(src="./js/jqBootstrapValidation.js")
+  script.
+    $(function () { 
+      $(".form-group input, .form-group textarea").jqBootstrapValidation();
+    });
+    options = {
+      emailNotification:"team@sfdevlabs.com",
+      emailConfirmationName:"email",
+      emailConfirmationFrom:"team@sfdevlabs.com",
+      emailConfirmationSubject:"Thanks for contacting SF Dev Labs",
+      emailConfirmationBodyHTML:"<p>We'll respond to your message soon!</p>",
+      emailConfirmationBodyText:"We'll respond to your message soon!"
+    }
+    new Fireform('#contact-form', 'http://fireform.org/list/26/ContactFormV1', options);
