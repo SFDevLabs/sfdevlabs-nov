@@ -24,7 +24,7 @@ block content
 
   section#about
     .container
-      .sectitle 
+      .sectitle
         h1 Modern, reliable web apps.
         p.lead
           | SF Dev Labs is a software development consultancy that specializes in building reliable, scalable web applications for industry and enterprise clients.
@@ -52,25 +52,25 @@ block content
 
   section#services
     .container
-      h1.sectitle What we do.        
+      h1.sectitle What we do.
       .row
         .col-md-4.bullet-block
           img(src="./images/product-definition.png")
-          .bullet-block-text  
+          .bullet-block-text
             h4 Product Definition
             p Using competitive analysis, rapid prototyping, and design thinking, our experienced product managers and designers will consult with your team to flesh out the best possible solution to your business’s unique software needs.
 
         .col-md-4.bullet-block
           img(src="./images/development.png")
-          .bullet-block-text  
+          .bullet-block-text
             h4 Agile Development
             p We practice Agile development to give you full transparency into how the project is progressing. Continuous testing and deployment allow us to validate features as they are being built, and shoot down bugs before they become a problem.
 
         .col-md-4.bullet-block
           img(src="./images/design.png")
-          .bullet-block-text  
+          .bullet-block-text
             h4 Responsive Design
-            p Our apps are built from the ground up to be mobile responsive and look great on any device. We do user research and needs discovery with your team to determine the best possible experience for your clients and employees using the app. 
+            p Our apps are built from the ground up to be mobile responsive and look great on any device. We do user research and needs discovery with your team to determine the best possible experience for your clients and employees using the app.
 
 
 
@@ -86,26 +86,39 @@ block content
 
   section#process
     .container
-      h1.sectitle How we do it.
+      h1.sectitle Client Work
       .row
         .col-md-4.bullet-block
-          img(src="./images/enterprise-database.png")
-          .bullet-block-text  
-            h4 Existing IT infrastructure
-            p Your reliable, trusted database and server infrastructure can stay in place. Your business does not need to upgrade the entire IT stack to take advantage of a modern web application.
+          img(src="./images/Logo_Baker_Electric_Solar.jpg")
+          .bullet-block-text
+            h4 Baker Electric Solar
+            p (Development)
 
         .col-md-4.bullet-block
-          img(src="./images/node-cloud.png")
-          .bullet-block-text  
-            h4 Node.js cloud API server
-            p We build node.js servers that act as a translation layer on top of your existing solutions, querying your database through its existing tech stack, while serving a modern JSON API.
+          img(src="./images/nginx-logo.png")
+          .bullet-block-text
+            h4 nginx.com
+            p (Development)
 
         .col-md-4.bullet-block
-          img(src="./images/responsive-app.png")
-          .bullet-block-text  
-            h4 Modern web application
-            p Using the JSON API served from node.js, we build a web application using the latest html5 and css3 technologies that is performant and works on any device. You can have your cake and eat it too!
+          img(src="./images/yume_logo_484.jpg")
+          .bullet-block-text
+            h4 YuMe
+            p (Design)
 
+      h1.sectitle Internal Projects
+      .row
+        .col-md-4.bullet-block
+          img(src="./images/logo-ching.png")
+          .bullet-block-text
+            h4 Ching
+            p (Invoicing Tool)
+
+        .col-md-4.bullet-block
+          img(src="./images/fireform-logo.png")
+          .bullet-block-text
+            h4 Fireform
+            p (Hosted < form >)
 
   section#contact.footer
     svg.crossed-seperator(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 100', preserveaspectratio='none')
@@ -127,7 +140,7 @@ block content
             div(class="form-group")
               label(for="organization") Organization <em>(optional)</em>
               <input class="form-control" type="text" id="organization" name="organization" />
-            div(class="form-group") 
+            div(class="form-group")
               label(for="message") Message <em>(optional)</em>
               <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
             <button type="submit" class="btn btn-default">Submit</button>
@@ -144,7 +157,7 @@ block content
   script(src="http://src.fireform.org/fireform.min.js")
   script(src="./js/jqBootstrapValidation.js")
   script.
-    $(function () { 
+    $(function () {
       $(".form-group input, .form-group textarea").jqBootstrapValidation();
     });
     options = {
