@@ -276,8 +276,8 @@ body {
   font-family: 'oxygenregular', Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 1.428571429;
-  color: #F5F5F5;
-  background-color: black;
+  color: #333;
+  background-color: #F5F5F5;
 }
 input,
 button,
@@ -6011,6 +6011,7 @@ form { margin-bottom: 0px;}
 
 /*col-xs-$*/
 @media screen and (max-width: 767px) {
+  body { background-color: black; }
   .internal-projects-leftcol { width: 0%; }
   .internal-projects-rightcol { width: 100%; }
   .head-img { 
@@ -6056,7 +6057,6 @@ form { margin-bottom: 0px;}
   .head-description { font-size: 1em; }
   .internal-projects-leftcol { width: 35%; }
   .internal-projects-rightcol { width: 65%; }
-  body { background-color: #F5F5F5 }
 }
 
 /*col-md-$*/
