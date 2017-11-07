@@ -134,6 +134,7 @@ textarea {
 button,
 input {
   line-height: normal;
+  box-shadow: 0px !important;
 }
 button,
 select {
@@ -271,7 +272,7 @@ body {
   font-size: 17px;
   line-height: 1.428571429;
   color: #333;
-  background-color: #F5F5F5;
+  background-color: black;
 }
 input,
 button,
