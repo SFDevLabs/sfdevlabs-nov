@@ -135,6 +135,11 @@ button,
 input {
   line-height: normal;
   box-shadow: 0px !important;
+  border: none !important;
+}
+textarea {
+  border: none;
+  box-shadow: 0px !important;
 }
 button,
 select {
