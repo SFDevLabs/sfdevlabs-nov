@@ -1,8 +1,2 @@
-sfdevlabs-nov
+sfdevlabs - 2017
 =============
-
-in the terminal run
-
-`sh watch.sh`
-
-from this folder
